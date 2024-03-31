@@ -24,11 +24,11 @@ public class SbCarApplication {
 @RestController
 @RequestMapping("/dic_student_name")
 class SbCarController {
-    @Value("${fullname:Bass}")
+    @Value("${fullname:Awa}")
     private String fullname;
 
     @GetMapping
     String getFullname() {
-        return "Work done by"+this.fullname;
+        return "Work done by "+this.fullname;
     }
 }
